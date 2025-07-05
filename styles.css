@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --bg-dark-color: #121212;
   --bg-light-color: #242424;
@@ -9,10 +11,15 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   background: var(--bg-dark-color);
   color: var(--main-color);
+}
+
+main {
+  margin: 6vw;
 }
 
 #hero {
@@ -28,7 +35,15 @@ body {
   font-style: italic;
 }
 #hero h1 {
-  font-size: 3rem;
+  font-size: 10vw;
+}
+#hero h2 {
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+#hero h1,
+#hero p {
+  margin: 0;
 }
 
 #nav {
@@ -48,4 +63,7 @@ body {
 #nav li a:hover {
   color: var(--second-color);
   border-top: 2px solid var(--main-color);
+}
+#nav {
+  display: none;
 }
